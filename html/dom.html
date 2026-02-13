@@ -1,0 +1,49 @@
+<!-- dom (documetn object modal)
+ -memanipulasi data atau object
+ -warna
+ mengubah isi text
+ mengubah element
+ menangani event (click, change, hover dll) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Dom</title>
+</head>
+<body>
+
+    <h1>ini h1 normal ga di apa apain</h1>
+    <div class="content">jingkontod</div>
+    <img src="https://placehold.net/400x400.png" alt="" class="" id="gambar">
+    <ul id="list">
+        
+    </ul>
+    <footer id="footer">Design by klein</footer>
+
+<script>
+    const judul = document.querySelector("h1");
+    const content = document.querySelector('.content');
+    const footer = document.getElementById("footer");
+    judul.innerText = "Belajar DOM JavaScript";
+    content.style.backgroundColor = 'green';
+    content.style.color = 'white';
+    content.innerHTML = "<h3>Content dengan Javascript </h3>";
+    const gambar = document.querySelector('#gambar')
+
+    const list = document.getElementById('list');
+    const li = document.createElement('li');
+    li.innerText = "Mie Goreng"
+    li.innerText = "Mie Rebus"
+
+    list.appendChild(li);
+
+    footer.innerText = "Design By klein Moretti";
+    footer.style.textAlign = 'center';
+    gambar.src = 'gambarbaru.png';
+    gambar.alt = 'Gambar baru'
+
+    console.log(document);
+</script>
+</body>
+</html>

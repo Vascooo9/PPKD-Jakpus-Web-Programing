@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- "" '' string (tidak bisa menambahkan operator) -->
+
+    <script>
+        const nama_depan = "Jamal";
+        const nama_belakang = "Udin"
+        // `` : Template literal
+        // interpolation ${}
+        let nama = "Budi";
+        let alamat = "Bekasi";
+        let pesan = `Halo ${nama}, kamu tinggal di ${alamat} yah. eh, kamu lagi, elu maksudnya. Bekai yang cuma bisa naik KRL jalur laut kan? `;
+        let angka1 = 1;
+        let angka2 = 2;
+
+        let a = 5;
+        a += 10;
+        console.log(a);
+
+        let username = "admin"
+        let password = "admin"
+        // ==, nilai + tipe data, !=: Tidak sama dengan, !==: tidak sama dengan + tipe data
+        // >, <, >=, <=
+
+        if(username == "admin"){
+            console.log("iya bener");
+        }
+
+        console.log(5 === "5");
+        console.log(5 < 10);
+        console.log(5 > 10);
+
+        if(username == "admin" && password == "admin"){
+            console.log("anda berhasil login");
+        }else{
+            console.log("login gagal");
+        }
+
+        // operator ternary : short if
+        let umur = 20;
+        let status = umur >= 20 ? 'Dewasa' : 'nak-Anak';
+        // kondisi jika nilai ? NilaiTruejika : NilaiFlaseJika
+        console.log(status);
+
+        switch (username) {
+            case "admin":
+            console.log("iya itu admin");
+            break;
+            default:
+            console.log("Bukan admin");
+        }
+
+        console.log("Hasilnya adalah:", angka1 + angka2)
+        console.log(`Hasilnya adalah: ${angka1 + angka2}`);
+        console.log(nama_depan + " " + nama_belakang);
+        console.log(pesan);
+        console.log(`Hasil perkalian dari 10 * 10 adalah : ${10 * 10}`);
+    </script>
+</body>
+</html> 

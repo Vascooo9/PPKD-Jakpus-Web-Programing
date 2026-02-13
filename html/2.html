@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+   
+    <!-- Boostrap CSS Bundle -->
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+     <style>
+        body{
+            background-color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="data"],
+        select { 
+            width: 70%;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px;
+            background-color: white;
+            color: black;
+            border: 1px solid;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 30px;
+        }
+ 
+        button:hover {
+            background-color: white;
+
+        }
+
+        .title h1:first-child {
+            color: black;
+        }
+
+         h1 {
+            color: red;
+            text-align: center;
+         }
+
+         .container {
+            width: 400px;
+            margin: 50px auto;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px black;
+         }
+
+         .form-group {
+            margin-bottom: 5px;
+         }
+
+         .radio-group, .checkbox-group {
+            display: flex;
+            gap: 8px;
+         }
+
+         .body-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+     </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="title" class="title"> 
+            <h1>Ini Data Peserta</h1>
+            <h1>Ini Data Peserta</h1>
+        </div>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="">Nama Lengkap</label>
+                    <input type="text" placeholder="Isi Nama Lengkap Anda">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="ex: adminwin999@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="">Tanggal Lahir</label>
+                    <input type="data">
+                </div>
+                <div class="form-group">
+                    <label for="">Jenis kelamin</label>
+                    <div class="radio-group">
+                        <input type="radio" name="Jenis_kelamin" id="Jenis_kelamin" value="L"> Laki Laki
+                        <input type="radio" name="Jenis_kelamin" id="Jenis_kelamin" value="P"> Perempuan
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Agama</label>
+                    <select name="Agama" id=""> <option value="">Islam</option>
+                        <option value="">Kristen</option>
+                        <option value="">Budha</option>
+                        <option value="">Konghuchu</option>
+                        <option value="">Hindu</option>
+                        <option value="">Daoisme</option>
+                        <option value="">konfusiuisme</option>
+                        <option value="">Zen</option>
+                        <option value="">Stoikisme</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Hobies</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="Hobies"> Nyebur
+                        <input type="checkbox" id="Hobies"> Terbang
+                        <input type="checkbox" id="Hobies"> Ngopi
+                        <input type="checkbox" id="Hobies"> Modol
+                        <input type="checkbox" id="Hobies"> Balap
+                    </div>
+                </div>
+                
+                <button>Save</button>
+                <input type="button" value="Cancel">
+            </form>       
+    </div>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card" style="height: 200px;">
+                <div class="card shadow-mid">
+                    <div class="body-card d-flex justify-content-center align-items-center">
+                        <h5>Jingkontod</h5>
+                        <h3>Pler kuda</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+            <!-- Boostrap JS Bundle-->
+            
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

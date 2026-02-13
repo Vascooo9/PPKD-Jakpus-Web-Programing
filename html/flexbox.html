@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .box {
+        border: 2px solid black;
+        width: 250px;
+        padding: 15px 20px;
+    }
+
+    .container {
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+        }
+        .box {
+            width: 90%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Skill</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Phyton</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Experiences</h3>
+            <ul>
+                <li>Pernah bekerja di PT. Google</li>
+                <li>Pernah bekerja di PT. Apple</li>
+                <li>Pernah belaajr di PPKD Jakpus</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

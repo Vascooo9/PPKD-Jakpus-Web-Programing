@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Hitung Total Ongkir
+     kota : Jakarta, Bandug, Surabaya
+     tarif : per kg berbeda tiap kota
+     soal : Hitung total ongkir 
+     jakarta, 10kg 100.000
+     
+     output : Total Ongkir : Rp. 100.000 -->
+
+
+
+     <script>
+        let kota = "Bandung"
+        let berat = 10;
+        let tarif = 100000
+        let total_ongkir;
+
+        if(kota === 'jakarta'){
+            tarif = 120000
+        } else if (kota === 'Bandung') {
+            tarif = 200000
+        } else if (kota === 'Surabaya') {
+            tarif = 150000
+        } else {
+            tarif = 100000
+        }
+
+        console.log(`Biaya ongkir anda: ${berat * tarif}`)
+        
+     </script>
+</body>
+</html>

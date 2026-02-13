@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sekolah</title>
+    
+<style>
+
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #fff;
+        margin: 0px;
+    }
+
+
+    header {
+        background-color: blue;
+        color: white;
+        padding: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        background-color: blueviolet;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 50px;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    h2 {
+        color: blue;
+    }
+
+    footer {
+        text-align: center;
+        color: white;
+        background-color: blue;
+        padding: 10px;
+        margin-top: 10%;
+    }
+
+    .kolom {
+        justify-content: center;
+        display: flex;
+        /* align-items: center; */
+    }
+
+    .daftar-siswa {
+        align-items: center;
+        text-align: center;
+        border: 1px solid;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+        .kolom {
+           flex-direction: column; 
+           align-items: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+ <header>
+    <h1>Website Sekolah Perguruan Gunung Surgawi</h1>
+ </header>
+
+ <nav class="navbar">
+    <a href="Profil">Profil</a>
+    <a href="Siswa">Siswa</a>
+    <a href="Kontak">Kontak</a>
+ </nav>
+<main>
+    <section id="Profil">
+        <h2>Profil Sekolah</h2>
+        <p>Sekolah tempat para immortal berkultivasi mencapai ranah Dao surgawi</p>
+    </section>
+    <section id="Siswa">
+        <h2>Informasi Siswa</h2>
+        <p>Data Siswa akan dibagikan di bagian ini</p>
+    </section>
+
+    <div class="kolom">
+        <fieldset class="daftar-siswa">
+            <h5>Jamal</h5>
+            <p>Kelas 10</p>
+            <button>Enter</button>
+        </fieldset>
+        <fieldset class="daftar-siswa">
+            <h5>Udin</h5>
+            <p>Kelas 11</p>
+            <button>Enter</button>
+        </fieldset>
+        <fieldset class="daftar-siswa">
+            <h5>Bambang</h5>
+            <p>Kelas 12</p>
+            <button>Enter</button>
+        </fieldset>
+    </div>
+    <section id="profil">
+        <h2>Kontak Sekolah</h2>
+        <p>Email : @infosekolah.sch.id</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy Copyright Policy 2026 Website</p>
+</footer>
+
+</body>
+</html>

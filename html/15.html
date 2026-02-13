@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Object</h3>
+    
+    <script>
+        // const siswa = []; array
+        const siswa = {
+            nama: "Reza",
+            umur: 20,
+            jurusan: "web"
+        };
+        // object
+        siswa.nama = "Reza";
+        siswa.alamat = "Bekasi";
+        delete siswa.alamat;
+        siswa.gender = "Laki-Laki";
+        
+        console.log(siswa);
+        console.log(siswa.nama);
+        console.log(siswa.umur);
+        console.log(siswa.jurusan);
+        console.log(siswa.gender);
+
+
+        for(let key in siswa){
+            console.log(`${key} : ${siswa[key]}`);
+        }
+
+        Object.keys(siswa).forEach(function(key){
+            console.log(`${key} : ${siswa[key]}`);
+        })
+
+        const peserta = [
+            {
+                nama: "Jamal",
+                umur: 25,
+                jurusan: "web",
+                nilai: 80,
+            },
+
+            {
+                nama: "Udin",
+                umur: 25,
+                jurusan: "web",
+                nilai: 60,
+            },
+
+            {
+                nama: "Bambang",
+                umur: 25,
+                jurusan: "web",
+                nilai: 90,
+            },         
+
+        ];
+
+            peserta.push({nama: "Andi", umur: 27, jurusan: "web", nilai: 80})
+            //splice
+            //findindex
+
+            const remove = peserta.splice(3, 2); //delete index
+            const index = peserta.findIndex(item => item.nama === 'Jamal');
+            peserta.push({nama: "Andi", umur: 27, jurusan: "web", nilai: 80})
+            if (index !== -1 ) {
+                peserta.splice(index, 1);
+            }
+            
+            console.log(peserta[0].nama);
+            const pesertaBaru = peserta.filter(item => item.nama !== "Andi");
+            console.log(pesertaBaru); 
+            console.log(peserta);
+            // splice
+            // dindindex
+
+            // peserta.splice(1, 1)
+
+
+    </script>
+</body>
+</html>

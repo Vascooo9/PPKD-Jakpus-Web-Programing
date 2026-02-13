@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Buatlah sistem passing grade dimana
+     siswa dinyatakan lulus ketika memenuhi semua syarat sebagai berikut
+     1. nilai teory 75
+     2. nilai praktek 80
+     3. kehadiran 90%
+     4. tidak memiliki pelanggaran berat
+     jika rata rata diatas 90 maka lulus dengan predikat sangat baik
+     jika rata rata diatas 85 maka lulus dengan predikat baik
+     dibawah 85 maka lulus
+     yang tidak lulus
+     1. kehadiran kurang dari 90%
+     2. nilai teory kurang dari 75
+     3. nilai praktek kurang dari 80
+     4. jika ada pelanggaran berat tidak lulus (Pelanggaran disiplin)
+     
+     output:
+     nama : jamal
+     rata rata : 81,5
+     status: Lulus
+     
+     rumus rata rata (nilai teori + nilai praktek : 2)-->
+
+
+<script>
+
+     let nama = "Jamal"
+     let nilai_teory = 60;
+     let nilai_praktek = 60;
+     let status_kehadiran = 90;
+     let rata_rata = (nilai_teory + nilai_praktek)/2
+     let pelanggaran_berat = true
+     let status = ""
+
+
+
+    if(nilai_teory < 75 ){
+        status = "Tidak Lulus nilai teory"
+    }else if (nilai_praktek < 80 ){
+        status = "Tidak Lulus nilai praktek"
+    }else if (status_kehadiran < 90){
+        status = "Tidak Lulus Kehadiran"
+    }else if(pelanggaran_berat){
+        status = "Tidak lulus pelanggaran berat"
+    }else{
+        status = "Lulus"
+    }
+
+    
+
+    console.log(`Nama : ${nama}`)
+    console.log(`Nilai Rata rata : ${rata_rata}`)
+    console.log(`Status Kehadiran : ${status}`)
+</script>
+
+
+
+</body>
+</html>
